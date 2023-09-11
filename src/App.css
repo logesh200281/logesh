@@ -1,43 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,600&display=swap');
+
 .App {
   text-align: center;
   padding: 20px;
+  font-family: 'Poppins', sans-serif; /* Specify the font family and provide a fallback */
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px;
- 
+/* colors and styling */
+:root {
+  --PrimaryColor: hsl(299, 18%, 33%); /* Corrected syntax */
+  --SecondaryColor: hsl(187, 81%, 48%); /* Corrected syntax */
+  --gradientColor: linear-gradient(to right, hsl(187, 88%, 48%), hsl(199, 100%, 21%)); /* Corrected syntax */
+  --blacktalar: hsl(201, 38%, 68%); /* Corrected syntax */
+  --textColor: hsl(249, 48%, 16%); /* Corrected syntax */
+  --greyText: rgb(190, 150, 190);
+  --irguttalar: rgb(239, 239, 230);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235); 
 }
-
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  
+a{
+  text-decoration: none;
 }
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-
+li{
+  list-style: none;
 }
-
-footer {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #333;
-  color: white;
+.section{
+  padding: 4rem 0 2rem;
 }
-header img{
-  max-height: 150px;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
- 
+.container{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
-/* Align the logo at the start */
-.logo-container {
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.flex{
   display: flex;
   align-items: center;
 }

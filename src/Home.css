@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,600&display=swap');
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 :root{
@@ -14,13 +16,13 @@
 }
 
 header {
-  display: flex;
+  
   height: 50px;
   padding: 0 1rem;
   background-color: var(--mainColor);
   color: var(--textColor);
   justify-content: center;
-  align-items: center;
+ 
 }
 
 nav a{
@@ -35,7 +37,7 @@ nav a:hover{
 
 
 header .nav-btn {
-  padding: 5px;
+  padding: 1px;
   cursor: pointer;
   background: transparent;
   border:none;
@@ -105,3 +107,31 @@ header .nav-btn {
 }
 
 /* Other styles for .hero, .image-container, and images */
+/* Add a CSS class to target the image-container in the Hero section */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  transition: transform 0.2s ease; /* Apply the 0.2-second transform animation */
+}
+
+/* Style for the images */
+.image-container .logo1 {
+  max-width: 50%;
+  height: auto;
+}
+.logo,
+.logo1 {
+    /* Your existing styles here */
+
+    /* Add this for the transition */
+    transition: transform 0.2s ease;
+}
+
+.logo:hover,
+.logo1:hover {
+    /* Add the transformation you want when hovering over the images */
+    transform: scale(1.2); /* You can adjust the scale factor as needed */
+}
