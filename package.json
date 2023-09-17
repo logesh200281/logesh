@@ -18,6 +18,8 @@
     "web-vitals": "^3.4.0"
   },
   "scripts": {
+    "build": "next build",
+  "export": "next export",  // Add this line
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
