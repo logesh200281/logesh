@@ -8,7 +8,7 @@
 }
 
 :root{
-  display: inline;
+    display: inline;
   --mainColor: #0d000e;
   --mainColorLight: #5767aa;
   --secondaryColor: #DB2B39;
@@ -22,13 +22,15 @@ header {
   background-color: var(--mainColor);
   color: var(--textColor);
   justify-content: center;
- 
+ align-items: center;
 }
 
 nav a{
-  margin: 0 2rem;
+  margin: 0 1.4rem;
   color: var(--textColor);
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a:hover{
@@ -46,6 +48,9 @@ header .nav-btn {
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;
+  justify-content: center;
+  align-items: center;
+
 }
 
 @media only screen and (max-width: 1024px){
@@ -90,19 +95,29 @@ header .nav-btn {
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 0.5px 0;
+  padding:  0.4px 0;
+ /* Increase the size of the border-bottom with "outset" style */
+border-bottom-style: outset;
+border-bottom-width: 10px; /* Adjust the value to increase or decrease thickness */
   color: white;
+  border-bottom-left-radius: 50px;
+  border-end-end-radius: 50px;
+  border-width: 1;
+  border-color: rgb(0, 15, 15);
+  height: 165px;
 }
 .image-container {
   display: flex; /* Use flexbox to align images horizontally */
   align-items: center; /* Center items vertically */
   justify-content: center;
   
+  
 }
 
 .image-container img {
   max-width: 500px; /* Adjust the image width as needed */
   margin-right: 10px; /* Add spacing between the images */
+  border-radius: 10px;
 
 }
 
@@ -112,26 +127,18 @@ header .nav-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   margin-top: 20px;
+  margin-bottom: 20px;
   transition: transform 0.2s ease; /* Apply the 0.2-second transform animation */
+
 }
 
 /* Style for the images */
 .image-container .logo1 {
   max-width: 50%;
   height: auto;
-}
-.logo,
-.logo1 {
-    /* Your existing styles here */
 
-    /* Add this for the transition */
-    transition: transform 0.2s ease;
 }
 
-.logo:hover,
-.logo1:hover {
-    /* Add the transformation you want when hovering over the images */
-    transform: scale(1.2); /* You can adjust the scale factor as needed */
-}
+

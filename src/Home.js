@@ -1,43 +1,11 @@
-import React, { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import React from "react";
 import "./Home.css";
 import logo from './LOGO.png';
 import image12 from './12.jpg';
 import image13 from './naac-img.png';
 import image14 from './iso-img.png';
 import ImageSlider from "./imageslider";
-
-function Navbar() {
-  const navRef = useRef();
-
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
-  }
-
-  return (
-    <header className="header">
-      <nav ref={navRef}>
-        <a href="./Home.js">Home</a>
-        <a href="/about">About</a>
-        <a href="/services">Department</a>
-        <a href="/portfolio">COURSES</a>
-        <a href="/contact">ADMISSION</a>
-        <a href="/contact">ACTIVITIES</a>
-        <a href="/contact">ACADEMICS</a>
-        <a href="/contact">MEDIA</a>
-        <a href="/contact">NIRF</a>
-        <a href="/contact">GALLERY</a>
-        <a href="/contact">CONTACT US</a>
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-          <FaTimes/>
-        </button>
-      </nav>
-      <button className="nav-btn" onClick={showNavbar}>
-        <FaBars/>
-      </button>
-    </header>
-  );
-}
 
 function Hero() {
   return (
@@ -51,13 +19,20 @@ function Hero() {
     </div>
   );
 }
+function Content(){
+  return(
+<div className="content">
+  hello
+</div>
+  );
+}
 
 function App() {
   const isMobile = window.innerWidth <= 768; // Define your breakpoint for mobile view
 
   return (
     <div className="App">
-      <Navbar />
+ 
       {isMobile ? (
         // Content to display on mobile view
         <div>
@@ -68,8 +43,11 @@ function App() {
         // Content to display on web view
         <div>
           <Hero />
+          
           <ImageSlider />
+          <Content />
           {/* Add web-specific content here */}
+          
         </div>
       )}
     </div>
